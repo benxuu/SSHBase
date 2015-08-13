@@ -1,0 +1,108 @@
+.navimenu{
+    background-image: url('../images/16Icon/navi_menu .png') !important;
+}
+.user {
+ 	background-image: url(../images/16Icon/user.png) !important;
+}
+.usergroup{
+ 	background-image: url(../images/16Icon/group.png) !important;
+}	
+.role{
+ 	background-image: url(../images/16Icon/group_key.png) !important;
+}
+.right{
+ 	background-image: url(../images/16Icon/key.png) !important;
+}
+.thds{
+ 	background-image: url(../images/16Icon/thds.png) !important;
+}
+.thd{
+ 	background-image: url(../images/16Icon/thd.png) !important;
+}
+.experts{
+ 	background-image: url(../images/16Icon/experts.png) !important;
+}
+.expert{
+ 	background-image: url(../images/16Icon/expert.png) !important;
+}
+.pwdChg{
+ 	background-image: url(../images/16Icon/pwdchg.png) !important;
+}
+.loginOut{
+ 	background-image: url(../images/16Icon/logout.png) !important;
+}
+.close{
+ 	background-image: url(../images/16Icon/close.png) !important;
+}
+.newAnnoc{
+ 	background-image: url(../images/16Icon/newannoc.png) !important;
+}
+.regaudit{
+ 	background-image: url(../images/16Icon/dataaudit.png) !important;
+}
+.audits{
+ 	background-image: url(../images/16Icon/audits.png) !important;
+}
+.audit{
+ 	background-image: url(../images/16Icon/audit.png) !important;
+}
+.formAudit{
+ 	background-image: url(../images/16Icon/formAudit.png) !important;
+}
+.baseSet{
+ 	background-image: url(../images/16Icon/baseSet.png) !important;
+}
+.sysModel{
+ 	background-image: url(../images/16Icon/sysModel.png) !important;
+}
+.dataDictionary{
+ 	background-image: url(../images/16Icon/dataDictionary.png) !important;
+}
+.pAnnoc{
+ 	background-image: url(../images/16Icon/pannoc.png) !important;
+}
+.annoce{
+ 	background-image: url(../images/16Icon/annoce.png) !important;
+}
+.annoc{
+ 	background-image: url(../images/16Icon/announce.png) !important;
+}
+.indexInfo{
+ 	background-image: url(../images/16Icon/indexinfo.png) !important;
+}
+.dataAudit{
+ 	background-image: url(../images/16Icon/dataaudit.png) !important;
+}
+.dataInput{
+ 	background-image: url(../images/16Icon/dataInput.png) !important;
+}
+.dataInputMag{
+ 	background-image: url(../images/16Icon/dataInputMag.png) !important;
+}
+.ecoproduct{ 	
+	background-image: url(../images/16Icon/ecoproduct.png) !important;
+}
+.industry{
+ 	background-image: url(../images/16Icon/hy.png) !important;
+}
+.industryInfo{
+ 	background-image: url(../images/16Icon/industryInfo.png) !important;
+}
+.sysManage{
+ 	background-image: url(../images/16Icon/sysman.png) !important;
+}
+.index{
+ 	background-image: url(../images/16Icon/index.png) !important;
+}
+.indexManage{
+ 	background-image: url(../images/16Icon/indexManage.png) !important;
+}
+.enterprise{
+ 	background-image: url(../images/16Icon/enterprise.png) !important;
+}
+.ecoEnterprise{
+ 	background-image: url(../images/16Icon/ecoEnterprise.png) !important;
+}
+.news{
+ 	background-image: url(../images/16Icon/news.png) !important;
+}

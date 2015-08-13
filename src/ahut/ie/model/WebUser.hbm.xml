@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                   "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+ <class name="ahut.ie.model.WebUser" table="WEB_USER" catalog="AHUTIE">
+  <id name="userName" type="java.lang.String">
+	   <column name="USERNAME"/>
+	   <generator class="assigned"/>
+  </id>
+  
+  <many-to-one class="ahut.ie.model.WebRole" fetch="select"
+   lazy="false" name="webRole">
+   <column name="ROLECODE"/>
+  </many-to-one>
+  <property generated="never" lazy="false" name="userCname" type="java.lang.String">
+   <column name="USERCNAME"/>
+  </property>
+  <property generated="never" lazy="false" name="password" type="java.lang.String">
+   <column name="USERPWD"/>
+  </property>
+ 
+  <property generated="never" lazy="false" name="mobile" type="java.lang.String">
+   <column name="MOBILE"/>
+  </property>
+  <property generated="never" lazy="false" name="email" type="java.lang.String">
+   <column name="EMAIL"/>
+  </property>
+   <property generated="never" lazy="false" name="isLock" type="java.lang.Integer">
+   <column name="ISLOCK"/>
+  </property>
+ </class>
+</hibernate-mapping>

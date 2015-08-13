@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="main" extends="json-default">
+ 		<action name="*do" class="ahut.ie.act.LoginAction" method="Do">
+ 			
+ 			<!-- 登录界面 -->
+			<result name="login" type="dispatcher">
+				/WEB-INF/content/login/Login.jsp
+			</result>
+			<result name="waplogin" type="dispatcher">
+				/APP/ie/index.html
+			</result>
+			
+			<!-- 验证码 -->
+			<result name="genCode" type="dispatcher">
+				/WEB-INF/common/GenCode.jsp
+			</result>
+			
+			<!-- 主界面 -->
+			<result name="main" type="dispatcher">
+				/WEB-INF/content/main/Main.jsp
+			</result>
+			<result name="success" type="json">
+				<param name="includeProperties">success,msg</param> 
+			</result>
+			<param name="actionName">{1}</param>
+		</action>
+		
+		<!-- 系统登录 -->
+		<action name="doLogin" class="ahut.ie.act.LoginAction" method="doLogin">
+			<result name="login" type="json">
+				<param name="includeProperties">success,msg</param> 
+			</result>
+		</action>
+		
+		<!-- 树形菜单 -->
+		<action name="getMenus" class="ahut.ie.act.LoginAction" method="getWebMenus">
+			<result name="success" type="json">
+				<param name="root">result.list</param>
+			</result>
+		</action>
+	</package>
+</struts>

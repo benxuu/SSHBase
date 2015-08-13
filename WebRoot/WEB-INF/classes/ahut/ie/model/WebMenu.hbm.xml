@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="ahut.ie.model.WebMenu" table="WEB_MENU" catalog="AHUTIE">
+        <id name="id" type="java.lang.Integer">
+            <column name="MENUID" precision="5" scale="0" />
+            <generator class="native" />
+        </id>
+        <property name="orderid" type="java.lang.Integer">
+            <column name="ORDERID" precision="5" scale="0" />
+        </property>
+        <property name="parentid" type="java.lang.Integer">
+            <column name="PARENTID" precision="5" scale="0" />
+        </property>
+        <property name="text" type="java.lang.String">
+            <column name="TEXT" />
+        </property>
+        <property name="qtip" type="java.lang.String">
+            <column name="QTIP" />
+        </property>
+        <property name="url" type="java.lang.String">
+            <column name="URL" />
+        </property>
+        <property name="iconCls" type="java.lang.String">
+            <column name="ICONCLS" />
+        </property>
+        <property name="leaf" type="java.lang.Boolean">
+            <column name="LEAF" precision="1" scale="0" />
+        </property>
+        <property name="showflag" type="java.lang.Boolean">
+            <column name="SHOWFLAG" precision="1" scale="0" />
+        </property>
+         <property name="param" type="java.lang.String">
+            <column name="PARAM" />
+        </property>
+    </class>
+</hibernate-mapping>

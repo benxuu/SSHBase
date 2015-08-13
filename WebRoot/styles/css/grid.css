@@ -1,0 +1,72 @@
+.link  A:link,.mylink A:visited ,.mylink A:active {color:#333;TEXT-DECORATION: none}
+.link  A:hover {color:#CC3300;text-decoration : none; position : relative; top : 1px; left : 1px}
+.x-selectable, .x-selectable * { 
+-moz-user-select: text !important;
+-khtml-user-select: text !important;
+-webkit-user-select: text !important; }  
+.x-grid-row td, 
+.x-grid-summary-row td, 
+.x-grid-cell-text, 
+.x-grid-hd-text, 
+.x-grid-hd, 
+.x-grid-row,  
+.x-grid-row, 
+.x-grid-cell, 
+.x-unselectable {
+    -moz-user-select: text !important;    
+    -khtml-user-select: text !important;    
+    -webkit-user-select: text !important;
+}
+.x-tree-checked {
+    font-weight: bold;
+    color: #777;
+}
+.x-grid-row-selected .x-grid-cell {
+    background-color: #efefef !important;
+}
+.x-grid3-cell-selectable, .x-grid3-cell-selectable * {
+	-moz-user-select: text!important; -khtml-user-select: text!important
+}
+
+#search-results a {
+    color: #385F95;
+    font:bold 11px tahoma, arial, helvetica, sans-serif;
+    text-decoration:none;
+}
+#search-results a:hover {
+    text-decoration:underline;
+}
+#search-results p {
+    margin:0px !important;
+}
+.x-tree-checked {
+    font-weight: bold;
+    color: #777;
+}
+.x-grid-row-selected .x-grid-cell {
+    background-color: #efefef !important;
+}
+.x-grid3-cell-selectable, .x-grid3-cell-selectable * {
+	-moz-user-select: text!important; -khtml-user-select: text!important
+}
+.task .x-grid-cell-inner {
+    padding-left: 15px;
+}
+.x-grid-row-summary .x-grid-cell-inner {
+    font-weight: bold;
+    font-size: 11px;
+}
+.icon-grid {
+    background: url(../shared/icons/fam/grid.png) no-repeat 0 -1px;
+}
+.newsTilte{text-align:center; color:#000; font-size: 16px; font-weight:700}
+.newMore{float:right; padding-right: 5px}
+.newMore a{text-decoration:none;float:left;font:bold 11px;color:#000;}
+.newMore a:hover{color:#CC3300;text-decoration : none; position : relative; top : 1px; left : 1px}
+.news1{margin-right:5px; padding-left: 5px}
+.news1 li{ list-style:none; clear:both;margin-top:10px; border-bottom:1px dashed #ccc; height:16px; display:block;margin-right:5px;}
+.news1 li a#n1{ text-decoration:none;float:left;font:bold 11px;color:#000;}  
+.news1 li a#n2{ text-decoration:none; float:right; color:#999;display:block;}
+.news1 li a#n3{ float:right; padding-right:20px;color:#999; display:block}
+.news1 li a#n1:hover{color:#CC3300;text-decoration : none; position : relative; top : 1px; left : 1px}
+.news1 li a#n3:hover,.news li a#n3:hover{ text-decoration:none;}

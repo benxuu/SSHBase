@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+<!-- 系统管理 -->
+	<package name="sysmag" extends="json-default">
+       <action name="userPwd*" class="ahut.ie.act.UserPwdAction"
+			method="{1}">
+			<result name="page" type="dispatcher">
+				/WEB-INF/content/main/PwdChg.jsp
+			</result>
+			<result name="success" type="json">
+				<param name="includeProperties">success,msg</param>
+			</result>
+		</action>
+		  <action name="user_*" class="ahut.ie.act.UserManagerAction"
+			method="{1}">
+			<result name="page" type="dispatcher">
+				/WEB-INF/content/main/UserManage.jsp
+			</result>
+			<result name="success" type="json">
+				<param name="includeProperties">success,result.*</param>
+			</result>
+		</action>
+		 <action name="role_*" class="ahut.ie.act.RoleManagerAction"
+			method="{1}">
+			<result name="page" type="dispatcher">
+				/WEB-INF/content/main/RoleManage.jsp
+			</result>
+		    <result name="success" type="json">
+				<param name="includeProperties">success,result.*</param>
+			</result>
+		</action>
+		<action name="right_*" class="ahut.ie.act.RoleManagerAction"
+			method="{1}">
+			
+		    <result name="success" type="json">
+				<param name="root">success,result.list</param>
+			</result>
+		</action>
+	</package>
+	</struts>	

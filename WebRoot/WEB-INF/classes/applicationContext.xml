@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+	xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+ <import resource="applicationContext-dao.xml"/>
+     <import resource="applicationContex-service.xml"/>
+     <import resource="applicationContext_trans.xml"/>
+ 	<bean id="dataSource"  
+        class="org.springframework.jdbc.datasource.DriverManagerDataSource">  
+        <property name="driverClassName">  
+            <value>oracle.jdbc.driver.OracleDriver</value>  
+        </property>  
+        <property name="url">  
+            <value>jdbc:oracle:thin:@10.129.1.150:1521:XE</value>  
+        </property>  
+        <property name="username">  
+            <value>ahutie</value>  
+        </property>  
+        <property name="password">  
+            <value>ahutieadmin</value>  
+        </property>  
+    </bean>
+	  
+	<bean class = "ahut.ie.util.SpringContextUtil" id = "springContextUtil"/>
+	<bean id="lobHandler" class="org.springframework.jdbc.support.lob.DefaultLobHandler" lazy-init="true" /> 
+	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+		<property name="dataSource">
+			<ref bean="dataSource" />
+		</property>
+		<property name="lobHandler" ref="lobHandler"></property>
+		<property name="mappingResources">
+			<list>
+				<value>ahut/ie/model/WebMenu.hbm.xml</value>
+				<value>ahut/ie/model/WebRole.hbm.xml</value>
+				<value>ahut/ie/model/WebUser.hbm.xml</value>
+		    </list>
+	   </property>
+		
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">
+					org.hibernate.dialect.OracleDialect
+				</prop>
+				<prop key="hibernate.show_sql">true</prop> 
+			</props>
+		</property>	
+		
+	</bean>
+	
+	</beans>

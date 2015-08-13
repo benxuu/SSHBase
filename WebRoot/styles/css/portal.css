@@ -1,0 +1,115 @@
+#app-header {
+    color: #596F8F;
+    font-size: 22px;
+    font-weight: 200;
+    padding: 8px 15px;
+    text-shadow: 0 1px 0 #fff;
+}
+
+.x-theme-neptune #app-header {
+    color: white;
+    text-shadow: none;
+}
+
+#app-msg {
+    background: #D1DDEF;
+    border: 1px solid #ACC3E4;
+    padding: 3px 15px;
+    font-weight: bold;
+    font-size: 13px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.x-panel-ghost {
+    z-index: 1;
+}
+.x-border-layout-ct {
+    background: #DFE8F6;
+}
+.x-portal-body {
+    padding: 0 0 0 8px;
+}
+.x-portal .x-portal-column {
+    /* columns must have vertical padding to avoid losing dimensions when empty */
+    padding: 8px 8px 0 0;
+}
+.x-portal .x-panel-dd-spacer {
+    border: 2px dashed #99bbe8;
+    background: #f6f6f6;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    margin-bottom: 10px;
+}
+.x-portlet {
+    margin-bottom:10px;
+    padding: 1px;
+}
+.x-portlet .x-panel-body {
+    background: #fff;
+}
+.portlet-content {
+    padding: 10px;
+    font-size: 11px;
+}
+
+#app-options .portlet-content {
+    padding: 5px;
+    font-size: 12px;
+}
+.settings {
+    background-image:url(../images/fam/folder_wrench.png);
+}
+.nav {
+    background-image:url(../images/fam/folder_go.png);
+}
+.info {
+    background-image:url(../images/fam/information.png);
+}
+
+/*TopBar DataView*/
+
+.ux-wallpaper {
+    background-color: #3d71b8;
+}
+.ux-wallpaper-tiled {
+    background-repeat: repeat;
+}
+.ux-shortcut {
+    cursor: pointer;
+    text-align: center;
+    padding: 8px;
+    margin: 8px;
+    width: 80px;
+}
+.ux-shortcut-icon {
+    width: 48px;
+    height: 48px;	
+	margin:0 auto;
+    background-color: transparent;
+    background-repeat: no-repeat;
+}
+.ux-shortcut-text {
+    font: normal 12px tahoma,arial,verdana,sans-serif;
+    text-decoration: none;
+	text-align: center;
+    padding-top: 2px;
+    color: white;
+}
+.x-view-over .ux-shortcut-text {
+    text-decoration: none;
+}
+
+.cpu-shortcut {
+    background-image: url(../images/statusLarge.png);
+}
+
+.grid-shortcut {
+    background-image: url(../images/grid48x48.png);
+}
+.person-shortcut {
+    background-image: url(../images/im48x48.png);
+}
+.clock-shortcut {
+    background-image: url(../images/clock.png);
+}
